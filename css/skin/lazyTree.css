@@ -1,0 +1,62 @@
+.lazyTree
+{
+	font-family: tahoma, arial, helvetica;
+	font-size: smaller;
+
+	line-height: 0;
+
+	white-space: nowrap;
+	
+	padding: 3;
+	border-width: 2;
+	border-style: inset;
+	border-color: buttonhighlight;
+	
+	background-color: threedlightshadow; /*#f0f0f0;*/
+/*	padding: 0;
+	margin: 0;
+	border-width: 0; */
+}
+.lazyTree a
+{
+	text-decoration: none;
+}
+.lazyTree a:visited
+{
+	text-decoration: none;
+}
+.lazyTree a:hover 
+{
+	text-decoration: underline;
+}
+.lazyTree a:focus
+{
+	text-decoration: none;
+	background-color: Gray;
+}
+.lazyTree a:active
+{
+	text-decoration: none;
+	background-color: Gray;
+}
+.lazyTree img 
+{
+	border-width: 0;
+}
+.tnLevelN
+{
+}
+.ltFolder
+{
+	font-weight: bold;
+	color: graytext;
+	vertical-align: middle; 
+/*	background-color:#DDDDDD;
+	padding: 0;
+	margin: 0;
+	border-width: 0;*/
+}
+#idLogPanel {
+	background-color: #f0f0f0;
+	font-size:smaller;
+}

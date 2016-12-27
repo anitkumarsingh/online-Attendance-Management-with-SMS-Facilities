@@ -1,0 +1,28 @@
+/* non-standard IE Specific Rules
+
+.scrollTableContainer {
+            position: relative;
+            height: 200px;
+            width: 416px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            border: solid #e4ecf7;
+            border-width: 0px 0px 1px 0px;
+        }
+        .scrollTableContainer thead tr {
+            position: absolute;
+            top: expression(this.offsetParent.scrollTop);
+        }
+
+*/
+
+        
+        .scrollTableContainer table {
+            border-width: 1px 1px 0px 0px;
+        }
+        .scrollTableContainer tbody {
+            height: auto;
+        }
+        .scrollTableContainer table tbody tr:first-child td {
+            padding: 4px 4px 4px 4px;
+        }

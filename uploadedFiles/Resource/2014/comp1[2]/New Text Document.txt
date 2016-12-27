@@ -1,0 +1,13 @@
+<form name="employer" action="empreg.jsp" method="post">
+					<table>
+					<p><h2>EMPLOYER DETAILS:</h2></p>
+				<tr><td>
+					Your UserName:</td><td><input type="text" size="15" name="e_id"></td></tr>
+					<tr><td>First Name:</td><td><input type="text" size="10" name="fname"></td></tr>
+					<tr><td>Last Name:</td><td><input type="text" size="10" name="lname"></td></tr>
+					<tr><td>Phone:</td><td><input type="text" size="15" name="phone"></td></tr>
+					<tr><td>Mobile:</td><td><input type="text" size="15" name="mobile"></td></tr>
+					<tr><td>Address:</td><td><input type="text" size="15" name="address"></td></tr>
+					<tr><td>Desired UserName:</td><td><input type="text" size="15" name="e_id"></td></tr>
+				<tr><td>	Password:</td><td><input type="password" size="15" name="password"></td></tr>
+				<tr><td>Re-type Password:</td><td><input type="password" size="15" name="password"></td></tr>

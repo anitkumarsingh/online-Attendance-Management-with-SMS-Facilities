@@ -1,0 +1,1449 @@
+ 
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+@charset "utf-8";
+
+/* DEFAULTS */
+
+html, body {
+	margin:0px;
+	padding:0px;
+	font-family: tahoma,geneva,arial,verdana,helvetica,sans-serif;
+	font-size:12px;
+	font-smooth: always;
+	font-weight: sharp;
+	font-variant: normal;
+	font-size-adjust: inherit;
+}
+a:link, a:visited {
+	color: #035BAC;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #000000;
+	text-decoration: underline;
+}
+
+/* GENERAL */
+
+a.plainLink:link, a.plainLink:visited {
+	color: #035BAC;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+	background: none;
+}
+a.plainLink:hover, a.plainLink:active {
+	color: #000000;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: underline;
+	background: none;
+}
+a.boldLink:link, a.boldLink:visited {
+	color: #035BAC;
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	background: none;
+}
+a.boldLink:hover, a.boldLink:active {
+	color: #000000;
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: underline;
+	background: none;
+}
+.liveBlueSeparator {
+	background: #d9effd;
+	height: 1px;
+	width: 610px;
+	margin: 5px 10px;
+	clear: both;
+}
+.dottedSeparator {
+	height:1px;
+	width:95%;
+	_width:93%;
+	background: url(http://i.imgci.com/espncricinfo/ciHome_separatornew.gif) left center repeat-x;
+	margin-top:5px;
+	margin-bottom:3px;
+	_margin-top:0px;
+	_margin-bottom:0px;
+	clear:both;
+}
+.autoSeparator {
+	background: #d9effd;
+	height: 1px;
+	width: auto;
+	margin: 5px 0px;
+	clear: both;
+	overflow:hidden;
+}
+.divBlock {
+	height:auto;
+	display:block;
+}
+.divBlockLeft {
+	height:auto;
+	display:block;
+	float:left;
+}
+.divBlockRight {
+	height:auto;
+	display:block;
+	float:right;
+}
+.space10 {
+	height:10px;
+	display:table-cell;
+}
+.space5 {
+	height:5px;
+	display:table-cell;
+	overflow:hidden;
+}
+
+/* FRAMESET */
+
+#ciCMSMenu {
+	font-size:11px;
+}
+
+#frameSetContainer1 {
+	width: 980px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}
+#frameSetContainer2 {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	float: left;
+}
+.topFrameLogo {
+	float:left;
+	width:235px;
+	padding:0px;
+}
+.topFrameBanner {
+	float:right;
+	padding-top:4px;
+	height:90px;
+	width:745px;
+	text-align:right;
+}
+.topFrameTitle {
+	width:980px;
+	clear:both;
+	padding:5px 0 5px 0;
+	font-size:12px;
+	color:#000;
+	font-weight:bold
+}
+.topFrameStripLHS {
+	width:650px;
+	padding:0px;
+	display:block;
+	margin-bottom:5px;
+}
+.topFrameStripRHS {
+	width:320px;
+	padding:0px;
+	display:block;
+	margin-bottom:5px;
+}
+.topFrameStrip320 {
+	width:320px;
+	padding:0px;
+	float:left;
+	margin-bottom:5px;
+}
+.topFrameStripLeft {
+	width:320px;
+	padding:0px;
+	float:left;
+	margin-bottom:5px;
+	margin-right:10px;
+	display:inline;
+}
+.topFrameStripRight {
+	width:320px;
+	padding:0px;
+	float:right;
+	margin-bottom:5px;
+	display:inline;
+}
+
+#frameSetContent {
+	width: 980px;
+	height: 100%;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+}
+#frameSetContentLHS {
+	width: 650px;
+	float: left;
+	padding: 0px;
+	margin: 0 10px 0 0;
+	display: inline;
+	background:#fff;
+	_margin-right:0px;
+	_width:630px;
+}
+#frameSetContentRHS {
+	width: 320px;
+	height:auto;
+	float: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* SCORECARD HEADER */
+
+.archiveCardContainer {
+	padding: 0px 9px;
+	margin: 0px;
+	display: table-cell;
+}
+.cardMenu {
+	font-size: 11px;
+	color: #010101;
+	font-weight: normal;
+	white-space: nowrap;
+}
+a.cardMenu:link, a.cardMenu:visited {
+	color: #035BAC;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration:none;
+	background:none;
+}
+a.cardMenu:hover {
+	color: #035BAC;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: underline;
+	background:none;
+}
+
+.headLeftDiv {
+	float: left;
+	width: 380px;
+	display: table-cell;
+	margin: 10px 5px 0px 0px;
+}
+.headRightDiv {
+	float: right;
+	width: 240px;
+	display: table-cell;
+	margin: 10px 0px 0px 5px;
+}
+.headRightDiv ul {
+	list-style-type:none;
+	font-size:11px;
+	color:#010101;
+	margin: 0px;
+	padding: 0px 0px 0px 10px;
+}
+.seriesText {
+	margin:0px 0px 3px 0px;
+	padding:0px;
+	font-size:11px;
+	font-weight:normal;
+	color:#010101;
+}
+.teamText {
+	margin:0px;
+	padding:0px;
+	font-family: arial,verdana,helvetica,sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#000000;
+}
+a.teamLink:link, a.teamLink:visited {
+	color:#000000;
+	font-family: arial,verdana,helvetica,sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration:none;
+	background:none;
+}
+a.teamLink:hover {
+	color:#000000;
+	font-family: arial,verdana,helvetica,sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: underline;
+	background:none;
+}
+a.headLink:link, a.headLink:visited {
+	color: #010101;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration:none;
+	background:none;
+}
+a.headLink:hover {
+	color: #010101;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: underline;
+	background:none;
+}
+.statusText {
+	margin:3px 0px 5px 0px;
+	padding:0px;
+	font-size:11px;
+	font-weight:normal;
+	color:#010101;
+}
+.breakText {
+	margin:3px 0px 0px 0px;
+	padding:0px;
+	font-size:11px;
+	font-weight:bold;
+	color:#010101;
+}
+
+/* SCORECARD INNINGS */
+
+.inningsTable {
+	width: 630px;
+	margin-top: 10px;
+	border-collapse: collapse;
+	clear: both;
+}
+.inningsTable td {
+	padding: 0px;
+}
+tr.inningsHead {
+	height:20px;
+	background:#d9effd;
+	font-size:12px;
+	color:#000000;
+	font-weight:bold;
+}
+tr.inningsRow {
+	height:16px;
+	font-size:11px;
+	vertical-align:top;
+}
+tr.inningsComms {
+	height:24px;
+	font-size:11px;
+	vertical-align:top;
+}
+td.inningsIcon {
+	vertical-align: top;
+	text-align: left;
+	padding: 4px 2px 0px 0px;
+}
+
+img.inningsIcon { 
+	cursor: pointer;
+	position: absolute; 
+	margin:0px;
+	padding:0px;
+	border:0;
+}
+
+td.playerName {
+	font-size: 11px;
+	color: #010101;
+	font-weight: normal;
+	white-space: nowrap;
+}
+a.playerName:link, a.playerName:visited {
+	color: #035BAC;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration:none;
+	background:none;
+}
+a.playerName:hover {
+	color: #035BAC;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: underline;
+	background:none;
+}
+td.battingDismissal {
+	text-align:left;
+	vertical-align:top;
+	font-size:11px;
+	font-weight:normal;
+	color:#010101;
+}
+td.battingRuns {
+	text-align:right;
+	vertical-align:top;
+	font-size:11px;
+	font-weight:bold;
+	color:#010101;
+}
+td.battingDetails {
+	text-align:right;
+	vertical-align:top;
+	font-size:11px;
+	font-weight:normal;
+	color:#010101;
+}
+td.battingRate {
+	text-align:center;
+	vertical-align:top;
+	font-size:11px;
+	font-weight:normal;
+	color:#010101;
+}
+td.battingComms {
+	font-size:11px;
+	background:#eaeaea;
+	padding:4px;
+}
+td.bowlingComms {
+	font-size:11px;
+	background:#eaeaea;
+	padding:0px 4px;
+}
+p.bowlingComms {
+	font-size:11px;
+	background:#eaeaea;
+	margin:4px 0px;
+}
+td.inningsDetails {
+	text-align:left;
+	vertical-align:top;
+	font-size: 11px;
+	font-weight: normal;
+	color: #010101;
+	padding-left:12px;
+}
+td.bowlingDetails {
+	text-align:right;
+	vertical-align:top;
+	font-size:11px;
+	font-weight: normal;
+	color:#010101;
+}
+a.fowLink:link, a.fowLink:visited {
+	color: #035BAC;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration:none;
+	background:none;
+	padding-left:3px;
+}
+a.fowLink:hover {
+	color: #035BAC;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: underline;
+	background:none;
+	padding-left:3px;
+}
+
+/* SCORECARD NOTES */
+
+.notesTable {
+	width: 630px;
+	margin-top: 10px;
+	border-collapse: collapse;
+	clear: both;
+}
+.notesTable td {
+	padding: 4px 10px;
+}
+tr.notesHead {
+	height:20px;
+	background:#d9effd;
+	font-size:12px;
+	font-weight:bold;
+	color:#000000;
+}
+tr.notesRow {
+	vertical-align:top;
+	font-size:11px;
+	font-weight:normal;
+	line-height:16px;
+	color:#010101;
+}
+.notesSectionTabs {
+	width: 145px;
+	height: auto;
+	float: left;
+	padding: 0px;
+	margin: 0px;
+}
+.notesSectionTabs ul {
+	width: 125px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.notesSectionTabs li.nonactive {
+	width: 119px;
+	height: 26px;
+	margin: 0px;
+	padding: 13px 0px 0px 6px;
+	font-size: 12px;
+	color: #035BAC;
+	background: url(http://i.imgci.com/espncricinfo/ciHome_separatornew.gif) left top repeat-x;
+	cursor: pointer;
+}
+.notesSectionTabs li.active {
+	width: 119px;
+	height: 26px;
+	margin: 0px;
+	padding: 13px 0px 0px 6px;
+	font-size: 12px;
+	color: #0d7ce4;
+	background: url(http://i.imgci.com/espncricinfo/ciPlayers_ctry-activebg.gif) left top no-repeat;
+	font-weight: bold;
+}
+.notesSectionMain {
+	float:left;
+	width:465px;
+	height:auto;
+	margin: 0px;
+}
+ul.notes {
+	margin:0px;
+	padding:6px 10px;
+	font-size:11px;
+	line-height:14px;
+	color:#010101;
+	list-style-type:disc;
+	_list-style-position:inside;
+	#list-style-position:inside;
+}
+ul.notes li {
+	margin:2px 0px;
+}
+
+/* MAIN SCORES */
+
+.mainScoresTable {
+	width: 630px;
+	margin-top: 10px;
+	border-collapse: collapse;
+	border: 0px;
+	clear: both;
+	font-size: 11px;
+	font-weight: normal;
+	color: #010101;
+}
+.mainScoresTable td {
+	padding: 1px 0px;
+}
+a.livePlayerCurrent:link, a.livePlayerCurrent:visited, a.livePlayerCurrent:active {
+	font-size: 11px;
+	color: #ff0000;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.livePlayerCurrent:hover {
+	font-size: 11px;
+	color: #ff0000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+a.livePlayerOther:link, a.livePlayerOther:visited, a.livePlayerOther:active {
+	font-size: 11px;
+	color: #035BAC;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.livePlayerOther:hover {
+	font-size: 11px;
+	color: #035BAC;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.liveRefreshCell {
+	padding:0;
+	border:1px solid #c3c3c3;
+	background-color:#EFEFEF;
+	font-size:10px;
+}
+a.liveRefreshLink:link, a.liveRefreshLink:visited, a.liveRefreshLink:active {
+	font-size: 10px;
+	color: #2263bf;
+	text-decoration: none;
+	font-weight: bold;
+	padding:0px 2px 0px 2px;
+}
+a.liveRefreshLink:hover {
+	font-size: 10px;
+	color: #2263bf;
+	text-decoration: underline;
+	font-weight: bold;
+	padding:0px 2px 0px 2px;
+}
+.liveDetailsContainer {
+	width: 630px;
+	display: table-cell;
+	margin: 0px 0px 7px 0px;
+	padding: 0px;
+}
+.liveDetailsText {
+	font-size: 11px;
+	color: #010101;
+	font-weight: normal;
+	text-decoration: none;
+	margin:0 10px 5px 10px;
+}
+
+/* COMMENTARY */
+
+#commsMenuID {
+	margin-top:0px;
+}
+.commsMenu {
+	width: 142px;
+	height: 100%;
+	float: left;
+	padding: 0px;
+	margin: 10px 0px 0px 0px;
+	border: 1px solid #6699CC;
+	border-right: 0px;
+}
+.commsMenu ul {
+	width: 141px;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.commsMenu li {
+	width: 135px;
+	margin: 0px;
+	padding: 5px 0px 5px 5px;
+	font-size: 11px;
+	color: #035BAC;
+}
+li.commsMenuSelected {
+	background: #ffffff url(http://i.imgci.com/espncricinfo/Lcom_tab_actv.gif) center top repeat-x;
+	width: 138px;
+	height: 18px;
+	color:#0d7ce4;
+	font-weight:bold;
+	margin-top:-1px 0px 0px 0px;
+	border-right:1px solid #fff;
+}
+li.commsMenuNonSelected {
+	width: 122px;
+	margin: 0px;
+	padding: 5px 0px 5px 5px;
+	background: url(http://i.imgci.com/espncricinfo/ciHome_separatornew.gif) bottom repeat-x;
+	cursor: pointer;
+}
+.commsTable {
+	width: 630px;
+	padding: 0px;
+	margin: 10px 0px;
+	border: 1px solid #6699CC;
+}
+.commsTable tr {
+	text-align: left;
+	vertical-align: top;
+}
+.commsTable td {
+	padding: 0px 5px 0px 5px;
+	font-family: arial,verdana,helvetica,sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: none;
+}
+.commsTable td.endofover {
+	font-family: tahoma,geneva,arial,verdana,helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #010101;
+	background: #d9effd;
+	padding: 5px;
+}
+.commsTable td.bbover {
+	font-family: tahoma,geneva,arial,verdana,helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #010101;
+	background: #d9effd;
+	padding: 2px 5px 0px 0px;
+}
+.commsText {
+	color: #000000;
+	font-family: arial,verdana,helvetica,sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: none;
+	margin: 0px;
+	padding: 2px 0px;
+}
+.commsImportant {
+	color: #000066;
+	font-family: arial,verdana,helvetica,sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+}
+a.liveCommsLink:link, a.liveCommsLink:visited, a.liveCommsLink:active {
+	font-size: 11px;
+	color: #035BAC;
+	font-weight: normal;
+	text-decoration: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+a.liveCommsLink:hover {
+	font-size: 11px;
+	color: #035BAC;
+	font-weight: normal;
+	text-decoration: underline;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* RIGHT HAND FRAME */
+
+#rhFrameContainer {
+	background:#d6d6d6 url(http://i.imgci.com/espncricinfo/LvScrRhsBg1.gif) repeat-x left top;
+	#overflow:hidden;
+	_overflow:hidden;
+	_margin-bottom:-10px;
+}
+#matchCoverage {
+	width: auto;
+	height:auto;
+	border: 2px solid #bababa;
+	margin-bottom: 10px;
+	padding: 0 10px 10px 8px;
+	#padding: 0 8px 10px 8px;
+	background-color:#fff;
+}
+.rhFrameModule {
+	width:auto;
+	height:auto;
+	padding:7px 8px 7px 9px;
+	margin:10px 0 10px 0;
+	border:1px solid #cecece;
+	clear:both;
+	background-color:#FFFFFF;
+}
+.rhFrameModule span {
+	color:#0068c4;
+	font-size:12px;
+	font-weight: bold;
+}
+.rhTableLink {
+	font-size:11px;
+	color:#035BAC;
+	padding:6px 0 10px 0;
+	margin:0px;
+}
+.rhTableLink ul {
+	margin:0px;
+	padding:0px;
+}
+.rhTableLink li.left {
+	float:left;
+	width:130px;
+	list-style-type:none;
+}
+.rhTableLink li.right {
+	float:left;
+	list-style-type:none;
+}
+.rhTableLink li ul {
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+.rhFrameHeading {
+	font-family: arial,verdana,helvetica,sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #0068c4;
+	margin: 0px;
+	text-decoration: none;
+	line-height: 100%;
+}
+.rhFrameSubHeading {
+	margin:0px;
+	padding:0px;
+	color:#666666;
+	font-size:12px;
+	font-weight:bold;
+	clear: both;
+}
+.weatherContainer {
+	background:url(http://i.imgci.com/espncricinfo/Lwtr_bg.gif) repeat-x left bottom;
+	margin:6px 0px 0px 0px;
+	padding:2px;
+	border:1px solid #d0d0d0;
+}
+a.weatherIcon:link, a.weatherIcon:visited, a.weatherIcon:hover, a.weatherIcon:active {
+	width:33px;
+	height:31px;
+	float:left;
+}
+a.weatherCurrent:link, a.weatherCurrent:visited, a.weatherCurrent:hover, a.weatherCurrent:active {
+	width:125px;
+	height:auto;
+	float:left;
+	padding:2px;
+	font-size: 11px;
+	color: #333333;
+	font-weight: normal;
+}
+a.weatherForecast:link, a.weatherForecast:visited, a.weatherForecast:hover, a.weatherForecast:active {
+	width:85px;
+	height:auto;
+	float:left;
+	margin-left:5px;
+	font-size: 11px;
+	color: #035BAC;
+	font-weight: normal;
+	padding-top:5px;
+	text-align:center;
+	display:block;
+	_margin-right:-3px;
+}
+.matchStoryDiv {
+	width:auto;
+	height:auto!important;
+	font-size:11px;
+	color:#035BAC;
+	margin:10px 0 10px 0;
+	#margin:10px 0 10px 0;
+	font-weight:normal;
+}
+.otherMatchDropdown {
+	width:300px;
+	height:18px;
+	border:1px solid #e9e7e7;
+	color:#666666;
+	font-size:11px;
+}
+
+/* PHOTOS */
+
+.ciPhotoGalleryDate {
+	color:#333333;
+	font-size:11px;
+	font-weight: bold;
+	margin-top:5px;
+	margin-bottom:8px;
+	text-decoration: none;
+}
+.ciPhotoGalleryCaption {
+	font-size:11px;
+	color:#666666;
+	margin-top:7px;
+	margin-bottom: 0px;
+	text-align: left;
+}
+.ciPhotoGalleryCopyright {
+	color:#999999;
+	font-size:9px;
+	margin-top:7px;
+	margin-bottom: 0px;
+	text-align: left;
+}
+
+/* ACCORDION FOR MATCH REPORTS */
+.matchaccordion {width:300px; height:auto; margin:0px; padding:0px;}
+.matchaccordion a{
+	padding-top:1px;
+	padding-left:0px;
+}
+.matchaccordion dt {
+	width:295px;
+	background:url(http://i.imgci.com/espncricinfo/col_p.gif) no-repeat left top;
+	height:24px;
+	font-weight: bold;
+	color: #035BAC!important;
+	outline: none;
+	_font-size:12px!important;
+	#font-size:12px!important;
+	margin: 0px;
+	padding:2px 0 0 5px;
+	cursor:pointer;
+}
+.matchaccordion .open {
+	background:url(http://i.imgci.com/espncricinfo/col_m.gif) no-repeat left top;
+	width:295px; 
+	font-weight: bold;
+	height:24px;
+	color: #FFFFFF!important;
+	outline: none;
+	_font-size:12px!important;
+	#font-size:12px!important;
+	padding:2px 0 0 5px;
+}
+.matchaccordion dd {
+overflow:hidden; 
+margin:0px;
+padding:0px;
+}
+
+.matchaccordion span { 
+	background:#fff;
+	font-size:11px;
+	color:#035BAC;
+	margin:0px;
+	#margin:0px;
+	font-weight:normal;
+	padding:0px;
+	display:block;
+	_overflow:hidden;
+}
+
+/*
+#lvScrAcordion {
+	width:298px;
+	height:auto;
+	display:block;
+	margin:5px 0 0 0;
+}
+#lvScrAcordion a {
+	padding-top:1px;
+	padding-left:5px;
+}
+.ui-accordion .ui-accordion-header {
+			background:#2263bf url(http://i.imgci.com/espncricinfo/ciHpOpenTab.gif) no-repeat right; 
+	display:block;
+	cursor: pointer;
+	outline:none;
+	width:293px;
+	height:18px;
+	margin:0px;
+	padding:2px 0 0 5px;
+}
+.ui-accordion .ui-accordion-content {
+	position: relative;
+	padding:0px;
+	display: none;
+	height:auto;
+}
+.ui-accordion .ui-accordion-content-active {
+	display: block;
+	height:auto;
+}
+.ui-state-default, .ui-widget-content .ui-state-default {
+	background: #deecf7 url(http://i.imgci.com/espncricinfo/col_p.gif) no-repeat right;
+	height:19px;
+	font-weight: bold;
+	color: #035BAC!important;
+	outline: none;
+	_font-size:12px!important;
+	#font-size:12px!important;	
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus {
+	background: #deecf7 url(http://i.imgci.com/espncricinfo/col_p.gif) no-repeat right;
+	font-weight: bold;
+	color: #FFFFFF;
+	height:19px;
+	outline: none;
+	_font-size:12px!important;
+	#font-size:12px!important;
+}
+.ui-state-active, .ui-widget-content .ui-state-active {
+	background:url(http://i.imgci.com/espncricinfo/col_m.gif) no-repeat right;
+	font-weight: bold;
+	height:19px;
+	color: #FFFFFF;
+	outline: none;
+	_font-size:12px!important;
+	#font-size:12px!important;
+}
+*/
+
+/* RIGHT HAND FRAME ADS AND SPONSORS */
+
+#RHS2Adslot {
+	width: 316px;
+	height: 125px;
+	padding: 10px 0 10px 0;
+	margin:10px 0 10px 0;
+	border:1px solid #cecece;
+	background-color:#FFFFFF;
+}
+#RHS2Adslot ul {
+	margin:0px;
+	padding: 0px;
+	list-style-type: none;
+}
+#RHS2Adslot li.left {
+	float: left;
+	padding: 0 0 0 10px;
+	display: inline;
+	height: 125px;
+	width:145px;
+	text-align:center;
+}
+#RHS2Adslot li.right {
+	float: right;
+	padding: 0 10px 0 0;
+	display: inline;
+	height: 125px;
+	width:145px;
+	text-align:center;
+}
+.spnsrLivelks {
+	width: 153px;
+	height: auto;
+	border: 1px solid #c9c9c9;
+	padding: 8px 8px 8px 8px;
+	background-color:#FFFFFF;
+}
+.spnsrLivelks p {
+	margin:0px;
+	padding:0px;
+}
+.spnsrSummaryTxt {
+	margin:3px 0px 0px 0px;
+	padding:0px;
+	font-size:11px;
+	font-weight:normal;
+	color:#444444;
+}
+.cricRecmndslnk {
+	width: 122px;
+	height: auto;
+	border: 1px solid #c9c9c9;
+	padding: 8px 8px 8px 8px;
+	background-color:#FFFFFF;
+}
+.cricRecmndslnk p {
+	margin:0px;
+	padding:0px;
+}
+.spnsrHeadTxt {
+	font-size: 11px;
+	color: #010101;
+	font-weight: bold;
+	padding:0px;
+	text-decoration: none;
+	margin:0px;
+}
+a.criRecmndsLnk:link, a.criRecmndsLnk:visited, a.criRecmndsLnk:active {
+	color: #0068c4;
+	font-size: 11px;
+	text-decoration: none;
+	font-weight: normal;
+	margin:0px;
+	padding:0px;
+	line-height:auto;
+}
+a.criRecmndsLnk:hover {
+	color: #000000;
+	font-size: 11px;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+/* STATS TABLE */
+
+.engineTable {
+	width: 100%;
+	border-collapse: collapse;
+	padding: 0px;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+.engineTable caption {
+	padding: 2px 3px 3px 3px;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #010101;
+	caption-side: top;
+	text-align: left;
+	background-color: #d9effd;
+	height: auto;
+}
+.engineTable thead {
+	background: url(http://i.imgci.com/espncricinfo/ptstblHead-bg.gif) left top repeat-x;
+}
+.engineTable th {
+	padding: 2px 3px 3px 3px;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #222222;
+	text-align: right;
+}
+.engineTable tr.head-height20 {
+	text-align: right;
+	vertical-align: middle;
+	height: 20px;
+	background: url(http://i.imgci.com/espncricinfo/ptstblHead-bg.gif) left top repeat-x;
+}
+.engineTable tr.head {
+	text-align: right;
+	vertical-align: middle;
+}
+.engineTable tr.headlinks {
+	text-align: right;
+	vertical-align: middle;
+	height: 21px;
+}
+.engineTable tr.title {
+	text-align: left;
+	vertical-align: bottom;
+}
+.engineTable tr.title td {
+	padding: 1px 3px 0px 3px;
+}
+.engineTable tr.data1, .engineTable tr.data2 {
+	text-align: right;
+	vertical-align: top;
+}
+.engineTable tr.data1 td {
+	border-bottom: 1px dotted #c6c6c6;
+}
+.engineTable tr.note {
+	text-align: left;
+	vertical-align: top;
+}
+.engineTable tr.note td {
+	padding: 0px 3px 1px 3px;
+	border-bottom: 1px dotted #c6c6c6;
+}
+.engineTable tr.height20 {
+	text-align: right;
+	vertical-align: center;
+	height: 20px;
+}
+.engineTable tr.height20 td {
+	border-bottom: 1px dotted #c6c6c6;
+}
+.engineTable td {
+	padding: 1px 3px 1px 3px;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #222222;
+}
+.engineTable td.left, .engineTable th.left {
+	text-align: left;
+}
+.engineTable td.padAst, .engineTable th.padAst {
+	padding-right: 9px;
+}
+.engineTable td.padDp1 {
+	padding-right: 9px;
+}
+.engineTable td.padDp2 {
+	padding-right: 15px;
+}
+.engineTable td.padTSw {
+	padding-right: 9px;
+}
+.engineTable td.padTSao, .engineTable th.padTS {
+	padding-right: 19px;
+}
+.engineTable td.padTSw-b {
+	padding-right: 10px;
+}
+.engineTable td.padTSao-b, .engineTable th.padTS-b {
+	padding-right: 23px;
+}
+.engineTable td.divider {
+	padding: 0px 0px 0px 0px;
+	border-left: 1px solid #c6c6c6;
+}
+.engineTable th.divider {
+	padding: 0px 0px 0px 0px;
+}
+.engineTable a:link, .engineTable a:visited {
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #0068c3;
+}
+.engineTable a:hover {
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #0068c3;
+}
+.engineTable a.black-link:link, .engineTable a.black-link:visited {
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #0B3766;
+}
+.engineTable a.black-link:hover {
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #0B3766;
+}
+.engineTable a.data-link:link, .engineTable a.data-link:visited {
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #333333;
+}
+.engineTable a.data-link:hover {
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #000000;
+}
+
+/* STATS */
+
+#statsContainer {
+	width:630px;
+	height:auto;
+	margin: 0px;
+	clear:both;
+}
+.statsInningsHead {
+	text-align:left;
+	color:#010101;
+	padding-left:8px;
+	font-weight:bold;
+}
+.statsOpn {
+	width:100%;
+	height:20px;
+	background: #acdeff url(http://i.imgci.com/espncricinfo/blueOpenTop.gif) no-repeat top;
+	text-align:left;
+	padding-top:6px;
+	cursor:pointer;
+	clear:both;
+}
+.statsClose {
+	width:100%;
+	height:20px;
+	background: #acdeff url(http://i.imgci.com/espncricinfo/blueClose.gif) no-repeat top;
+	text-align:left;
+	padding-top:6px;
+	cursor:pointer;
+	clear:both;
+}
+.wagon td {
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* DESKTOP */
+
+.desktopContainer1 {
+	width:328px;
+	border:6px solid #000000;
+	height:auto;
+	margin:0px;
+}
+.desktopContainer2 {
+	width:320px;
+	border:4px solid #cc9832;
+	height:auto;
+	margin:0px;
+}
+.desktopContainer3 {
+	width:318px;
+	background: url(http://i.imgci.com/espncricinfo/dsktopScrBoxBg.jpg) repeat-x;
+	border:1px solid #e6e6e8;
+	height:auto;
+	margin:0px;
+}
+.desktopLogo {
+	float:left;
+	clear:both;
+	padding:0px;
+	margin:10px 0 5px 7px;
+}
+.desktopSponsor {
+	float:left;
+	padding:0px;
+	margin:0px;
+}
+.desktopPanelTop {
+	background: url(http://i.imgci.com/espncricinfo/crvTp_303.gif) top no-repeat;
+	width:303px;
+	height:6px;
+	float:left;
+	z-index:-1;
+	padding: 0px;
+	margin:0 7px 0 7px;
+	_margin:0 3px 0 3px;
+	overflow: hidden;
+}
+.desktopPanelBottom {
+	background: url(http://i.imgci.com/espncricinfo/crvBt_303.gif) top no-repeat;
+	width:303px;
+	height:6px;
+	float:left;
+	padding: 0px;
+	margin:0 7px 7px 7px;
+	_margin:0 3px 0 3px;
+}
+.desktopPanelContent {
+	width:281px;
+	border-left: 1px solid #bababa;
+	border-right: 1px solid #bababa;
+	clear:both;
+	margin-left:7px;
+	_margin-left:6px;
+	background-color: #FFF;
+	padding: 0px 10px 4px 10px;
+}
+.desktopHeading {
+	font-size:10px;
+	font-weight:bold;
+	color:#999999;
+	border-bottom: 1px solid #b7b7b7;
+	padding: 5px 0 3px 0px;
+}
+.desktopText {
+	font-size:10px;
+	font-weight:bold;
+	color:#999999;
+	padding: 3px 0 3px 0px;
+}
+.desktopTextSeparator {
+	background:transparent url(http://i.imgci.com/espncricinfo/ciHome_separatornew.gif) repeat-x scroll center bottom;
+	font-size:10px;
+	font-weight:bold;
+	color:#999999;
+	padding: 3px 0 3px 0px;
+}
+.desktopStatus {
+	background:transparent url(http://i.imgci.com/espncricinfo/ciHome_separatornew.gif) repeat-x scroll center top;
+	font-size:10px;
+	font-weight:bold;
+	color:#999999;
+	padding: 3px 0 3px 0px;
+}
+
+/* TABS */ 
+
+div.tabBox {
+	width:650px;
+	height:auto;
+	margin:10px 0 0 0;
+	padding:0 0 0 0;
+	#padding:0 0 1px 0;
+	border-bottom:1px solid #aed7ed;
+	position:relative;
+	float:left;
+}
+div.tabBox1 {
+	width:650px;
+	height:auto;
+	margin:10px 0 0 0;
+	padding:0 0 1px 0;
+	border-bottom:1px solid #aed7ed;
+}
+div.tabArea {
+	#height:12px;
+	width:370px;
+	float:left;
+	font: 12px Tahoma;
+	padding: 4px;
+	#padding: 5px;
+	margin:0px;
+	position: relative;
+	z-index: 9999;
+}
+div.tabArea1 {
+ 	#height:12px;
+	width:617px;
+ 	#width:615px;
+	font: 12px Tahoma;
+	padding: 4px;
+ 	#padding: 5px;
+	margin:0px;
+	position: relative;
+	z-index: 9999;
+}
+.tab {
+	background-color: #eaeaea;
+	border: 1px solid #c0c0c0;
+	text-decoration: none;
+	padding:4px 5px 4px 5px;
+	cursor:pointer;
+}
+a.activeTab, a.activeTab:link, a.activeTab:visited, a.activeTab:active {
+	background-color: #FFFFFF;
+	border: 1px solid #aed7ed;
+	border-bottom:1px solid #FFFFFF;
+	font-weight:bold;
+	padding:4px 5px 4px 5px;
+	cursor:pointer;
+	color:#000000;
+	text-decoration:none;
+	outline:none;
+}
+a.tab {
+	background-color: #eaeaea;
+	border: 1px solid #c0c0c0;
+	text-decoration: none;
+	padding:4px 5px 4px 5px;
+}
+a.tab, a.tab:visited {
+	color: #333333;
+}
+a.tab:hover {
+	background-color: #fefefe;
+	border: 1px solid #c0c0c0;
+	border-bottom-width: 0px;
+}
+.tabContent {
+	width: 640px;
+	margin: 0px 10px 0px 0;
+	padding:0 0 10px 10px;
+	background-color:#FFFFFF;
+}
+.tabContent1 {
+	width: 640px;
+	height: 100%;
+	background-color:#FFFFFF;
+}
+.tabTxtHldr {
+	width:255px;
+	_width:250px;
+	display:block;
+	padding:5px 15px 0 0;
+	float:right;
+	margin:0px;
+	font-size:10px;
+	_padding-right: 20px;
+	text-align:right;
+}
+.linkSep {
+	font-size:10px;
+	margin:0 0 0 2px;
+	padding:0px;
+}
+/* For mobile link */ 
+a.mblTxt:link, a.mblTxt:visited, a.mblTxt:active {
+	font-size: 10px;
+	font-weight: bold;
+	color: #e89f01;
+	text-decoration: none;
+}
+a.mblTxt:hover {
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+/* For mobile link */ 
